@@ -1,0 +1,38 @@
+body {
+  padding-top: 15px;
+  background-color: #d1994a;
+}
+
+.border_img {
+  padding-bottom: 15px;
+}
+
+.Home {
+  text-align: center;
+}
+
+.with-margin {
+  margin-bottom: 10px;
+  margin-right: 25px;
+  border-left: 25px;
+  border-right: 25px;
+}
+
+.Home-header {
+  position: relative;
+  background-color: #d1994a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* .thumbnail {
+  border-color: chocolate;
+  color: #d1994a;
+  background-color:
+   aqua;
+} */

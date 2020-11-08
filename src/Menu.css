@@ -1,0 +1,33 @@
+body {
+  padding-top: 15px;
+  background-color: #d1994a;
+}
+
+.with-margin {
+  margin-bottom: 10px;
+}
+
+.Menu {
+  text-align: center;
+}
+
+.dropdown-toggle:enabled,
+.open .dropdown-toggle {
+  background: #642b09 !important;
+  border-color: #642b09 !important;
+  color: #ffffff !important;
+}
+
+.Menu-header {
+  background-color: #d1994a;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.divheight {
+  height: 200px;
+}

@@ -17,6 +17,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 
+//Admin Home
+//This view will display:
+// Four sections that will route the administrator to the different change options and orders made
+
 export class Changes extends Component {
   render() {
     return (
@@ -37,15 +41,30 @@ export class Changes extends Component {
             <Row> Administrator Changes: </Row>
             <Row>
               <Col>
-                <Card style={{ color: "#000" }}>
+                <Card
+                  style={{
+                    color: "#000",
+                    borderColor: "#642b09",
+                    height: "100%",
+                  }}
+                >
                   <Card.Body>
                     <Card.Title> Item Changes</Card.Title>
                     <Card.Text>
                       {" "}
                       Add and Remove and Modify
-                      <Button>
-                        <Nav>
-                          <NavLink style={{ color: "#000" }} to="/menuEdit">
+                      <Button
+                        style={{
+                          backgroundColor: "#642b09",
+                          borderColor: "#642b09",
+                        }}
+                        block
+                      >
+                        <Nav className="justify-content-center">
+                          <NavLink
+                            style={{ color: "#FFF", width: "200px" }}
+                            to="/menuEdit"
+                          >
                             {" "}
                             Menu Changes{" "}
                           </NavLink>
@@ -56,13 +75,28 @@ export class Changes extends Component {
                 </Card>
               </Col>
               <Col>
-                <Card style={{ color: "#000" }}>
+                <Card
+                  style={{
+                    color: "#000",
+                    borderColor: "#642b09",
+                    height: "100%",
+                  }}
+                >
                   <Card.Body>
                     <Card.Title> Availability Changes </Card.Title>
                     <Card.Text> Enable Disable Operations </Card.Text>
-                    <Button>
-                      <Nav>
-                        <NavLink style={{ color: "#000" }} to="/schedEdit">
+                    <Button
+                      style={{
+                        backgroundColor: "#642b09",
+                        borderColor: "#642b09",
+                      }}
+                      block
+                    >
+                      <Nav className="justify-content-center">
+                        <NavLink
+                          style={{ color: "#FFF", width: "200px" }}
+                          to="/schedEdit"
+                        >
                           {" "}
                           Schedule Changes{" "}
                         </NavLink>
@@ -72,15 +106,64 @@ export class Changes extends Component {
                 </Card>
               </Col>
               <Col>
-                <Card style={{ color: "#000" }}>
+                <Card
+                  style={{
+                    color: "#000",
+                    borderColor: "#642b09",
+                    heigth: "100%",
+                  }}
+                >
                   <Card.Body>
                     <Card.Title> General Information Changes</Card.Title>
-                    <Card.Text> About Us and Maybe Pictures? </Card.Text>
-                    <Button>
-                      <Nav>
-                        <NavLink style={{ color: "#000" }} to="/infoEdit">
+                    <Card.Text>
+                      {" "}
+                      Change information in the Home and About Us Pages{" "}
+                    </Card.Text>
+                    <Button
+                      style={{
+                        backgroundColor: "#642b09",
+                        borderColor: "#642b09",
+                      }}
+                      block
+                    >
+                      <Nav className="justify-content-center">
+                        <NavLink
+                          style={{ color: "#FFF", width: "200px" }}
+                          to="/infoEdit"
+                        >
                           {" "}
                           Information Changes{" "}
+                        </NavLink>
+                      </Nav>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>{" "}
+              <Col>
+                <Card
+                  style={{
+                    color: "#000",
+                    borderColor: "#642b09",
+                    heigth: "100%",
+                  }}
+                >
+                  <Card.Body>
+                    <Card.Title> Orders View </Card.Title>
+                    <Card.Text> Review Orders made and cancelled </Card.Text>
+                    <Button
+                      style={{
+                        backgroundColor: "#642b09",
+                        borderColor: "#642b09",
+                      }}
+                      block
+                    >
+                      <Nav className="justify-content-center">
+                        <NavLink
+                          style={{ color: "#FFF", width: "200px" }}
+                          to="/adminOrder"
+                        >
+                          {" "}
+                          Orders Created{" "}
                         </NavLink>
                       </Nav>
                     </Button>

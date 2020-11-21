@@ -11,9 +11,8 @@ import {
   Form,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "react-bootstrap/Image";
 
-export class InfoEdit extends Component {
+export class AdminOrder extends Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
@@ -51,17 +50,7 @@ export class InfoEdit extends Component {
               <Col>
                 <Card style={{ color: "#000" }}>
                   <Card.Body>
-                    <Card.Text> Information Edit</Card.Text>
-                    <form onSubmit={this.handleSubmit}>
-                      <label>
-                        About Us:
-                        <textarea
-                          value={this.state.value}
-                          onChange={this.handleChange}
-                        />
-                      </label>
-                      <input type="submit" value="Submit" />
-                    </form>
+                    <Card.Text> Orders Made List</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -73,4 +62,4 @@ export class InfoEdit extends Component {
   }
 }
 
-export default InfoEdit;
+export default AdminOrder;

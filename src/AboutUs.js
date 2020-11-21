@@ -12,8 +12,25 @@ import {
   Nav,
 } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
+
+//About Us View:
+
+//This view will display:
+//General Information like hours, and contact information
+//Provide Navigation to Facebook and Google Maps
+//Navigation to Home Page
+// Pictures
+
+//  React components used
+// Rows (allows organization by Rows)
+// Columns (allows organizations by Colums)
+// Cards ( allows to divide components by sections)
+// Image (allows customization of images in the view)
+// Button (allows assignment of events like Navigation through the website)
+// Nav, NavLink (allows transition from one view to another)
 
 export class AboutUs extends Component {
   render() {
@@ -64,14 +81,14 @@ export class AboutUs extends Component {
                     </Button>
                     {"  "}
                     <Card.Text> Follow Us on Facebook!</Card.Text>
-                    <Link to="facebook.com/BocadoMoca/">
+                    <a href="https://facebook.com/BocadoMoca/">
                       <Image
                         src="facebook.png"
                         width="150"
                         height="100"
                         fluid
                       />
-                    </Link>
+                    </a>
                   </Card.Body>
                 </Card>
               </Col>
@@ -86,7 +103,10 @@ export class AboutUs extends Component {
                       located in Moca Puerto Rico. <br></br> Working Hours:
                     </Card.Text>
                     <Card.Title> Policies </Card.Title>
-                    <Card.Text> Write Business Policies </Card.Text>
+                    <Card.Text> </Card.Text>
+                    <a href="https://goo.gl/maps/QVgBqG1QH5BXksmS9">
+                      <Image src="googlemap.png" width="50px" height="50px" />
+                    </a>
                   </Card.Body>
                 </Card>
               </Col>

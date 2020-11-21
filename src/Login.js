@@ -15,6 +15,10 @@ import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
 
+//Admin Login
+//This view will display:
+//Text boxes for username and password
+
 export class Login extends Component {
   render() {
     return (

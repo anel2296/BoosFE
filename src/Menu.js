@@ -18,6 +18,13 @@ import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
 
+//Menu View
+
+// This view will display:
+//Category choose button
+//Present Items will be sorted by category
+//Order summary
+
 export class Menu extends Component {
   constructor() {
     super();

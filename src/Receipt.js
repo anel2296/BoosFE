@@ -1,19 +1,12 @@
 import React, { Component } from "react";
 import "./Receipt.css";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Alert,
-  Breadcrumb,
-  Card,
-  Form,
-  Nav,
-} from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "react-bootstrap/Image";
+
+//Receipt
+
+//This view will display:
+//Evidence of Payment
 
 export class Receipt extends Component {
   render() {
@@ -34,9 +27,9 @@ export class Receipt extends Component {
             </Row>
             <Row class="body">
               <Col>
-                <Card style={{ backgroundColor: "#d1994a", color: "#d1994a" }}>
+                <Card style={{ backgroundColor: "#d1994a", color: "#000" }}>
                   <Card.Body>
-                    <Card.Text> Purchase Summary </Card.Text>
+                    <Card.Text> Purchase Successful </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

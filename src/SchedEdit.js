@@ -15,6 +15,24 @@ import Image from "react-bootstrap/Image";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
 
 export class SchedEdit extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { opDay: "", clDay: "" };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ opDay: event.target.opDay });
+    this.setState({ clDay: event.target.clDay });
+  }
+
+  handleSubmit(event) {
+    alert("Opens from: " + this.state.opDay + "Until : " + this.state.clDay);
+    event.preventDefault();
+  }
+
   render() {
     return (
       <div className="SchedEdit">
@@ -44,6 +62,33 @@ export class SchedEdit extends Component {
                       offstyle="outline-warning"
                       width={150}
                     />
+                  </Card.Body>
+                </Card>
+                <Card border="#000" style={{ color: "#000" }}>
+                  <Card.Body>
+                    <Card.Text> Working Days </Card.Text>
+                    <form onSubmit={this.handleSubmit}>
+                      <label>
+                        Opening Day:
+                        <input
+                          type="text"
+                          value={this.state.opDay}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                      <label>
+                        Closing Day:
+                        <input
+                          type="text"
+                          value={this.state.clDay}
+                          onChange={this.handleChange}
+                        />
+                      </label>
+                      <input type="submit" value="Save" />
+                    </form>
+                    {/* <Button variant="success" class="with-margin">
+                      Add
+                    </Button> */}
                   </Card.Body>
                 </Card>
               </Col>

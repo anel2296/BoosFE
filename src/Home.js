@@ -1,18 +1,25 @@
 import "./Home.css";
 import React, { Component } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Alert,
-  Breadcrumb,
-  Card,
-  Nav,
-} from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Container, Row, Col, Button, Card, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
+
+//  Home View :
+
+//This view will display:
+// The websites Welcome and Opening Information
+// Navigation to Bocados facebook page for customers to follow
+//  Navigation to About Us and Memu views
+//  Bocado Picture(s)
+
+//  React components used
+// Rows (allows organization by Rows)
+// Columns (allows organizations by Colums)
+// Cards ( allows to divide components by sections)
+// Image (allows customization of images in the view)
+// Button (allows assignment of events like Navigation through the website)
+// Nav, NavLink (allows transition from one view to another)
 
 export class Home extends Component {
   render() {
@@ -81,14 +88,14 @@ export class Home extends Component {
                       </Nav>
                     </Button>{" "}
                     <Card.Text> Follow Us on Facebook!</Card.Text>
-                    <Link to="facebook.com/BocadoMoca/">
+                    <a href="https://facebook.com/BocadoMoca/">
                       <Image
                         src="facebook.png"
                         width="150"
                         height="100"
                         fluid
                       />
-                    </Link>
+                    </a>
                   </Card.Body>
                 </Card>
               </Col>

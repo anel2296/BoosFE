@@ -10,6 +10,7 @@ import { Changes } from "./Changes";
 import { InfoEdit } from "./InfoEdit";
 import { MenuEdit } from "./MenuEdit";
 import { SchedEdit } from "./SchedEdit";
+import { AdminOrder } from "./AdminOrder";
 import ValidatedLoginForm from "./ValidatedLoginForm";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/infoEdit" component={InfoEdit} />
           <Route path="/menuEdit" component={MenuEdit} />
           <Route path="/schedEdit" component={SchedEdit} />
+          <Route path="/adminOrder" component={AdminOrder} />
           <Route path="/login2" component={ValidatedLoginForm} />
         </Switch>
       </div>

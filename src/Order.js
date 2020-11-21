@@ -8,12 +8,16 @@ import {
   Card,
   Dropdown,
   ButtonGroup,
-  Form,
   Nav,
 } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "react-bootstrap/Image";
+
+//Order View
+
+//This view will display:
+//Payment Method
+//Order Summary
 
 export class Order extends Component {
   render() {
@@ -65,6 +69,25 @@ export class Order extends Component {
                       Payment Module Should Appear Here <br></br>
                       Depending on Chosesn <br></br> Payment Method
                     </Card.Text>
+                    <Button
+                      type="button"
+                      style={{
+                        backgroundColor: "#642b09",
+                        borderColor: "#642b09",
+                      }}
+                      block
+                    >
+                      {" "}
+                      <Nav className="justify-content-center">
+                        <NavLink
+                          style={{ color: "#FFF", width: "200px" }}
+                          to="/receipt"
+                        >
+                          {" "}
+                          Pay{" "}
+                        </NavLink>
+                      </Nav>
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>

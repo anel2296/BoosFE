@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Home } from "./Home";
 import { AboutUs } from "./AboutUs";
 import { Menu } from "./Menu";
@@ -11,10 +10,10 @@ import { InfoEdit } from "./InfoEdit";
 import { MenuEdit } from "./MenuEdit";
 import { SchedEdit } from "./SchedEdit";
 import { AdminOrder } from "./AdminOrder";
-import ValidatedLoginForm from "./ValidatedLoginForm";
+import App from "./containers/App_container";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function App() {
+function Routing() {
   return (
     <BrowserRouter>
       <div className="container">
@@ -30,11 +29,11 @@ function App() {
           <Route path="/menuEdit" component={MenuEdit} />
           <Route path="/schedEdit" component={SchedEdit} />
           <Route path="/adminOrder" component={AdminOrder} />
-          <Route path="/login2" component={ValidatedLoginForm} />
+          <Route path="/app" component={App} />
         </Switch>
       </div>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default Routing;

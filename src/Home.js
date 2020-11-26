@@ -4,6 +4,7 @@ import { Container, Row, Col, Button, Card, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
+import ContactInfo from "./components/contact_info/ContactInfo";
 
 //  Home View :
 
@@ -112,6 +113,8 @@ export class Home extends Component {
                         <Card.Title>Working Hours:</Card.Title>
                         Thursday - Sunday <br></br> from 4pm to 9pm{" "}
                       </div>
+                      {/* Verify, render is here 
+                      <ContactInfo/> */}
                     </Card.Text>
                   </Card.Body>
                 </Card>

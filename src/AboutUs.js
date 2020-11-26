@@ -15,6 +15,7 @@ import { Link, NavLink } from "react-router-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
+import ContactInfo from "./components/contact_info/ContactInfo";
 
 //About Us View:
 
@@ -101,6 +102,8 @@ export class AboutUs extends Component {
                       {" "}
                       We are a Tapas Bar and Restaurant <br></br>
                       located in Moca Puerto Rico. <br></br> Working Hours:
+                      {/* Verify Here
+                      <ContactInfo/> */}
                     </Card.Text>
                     <Card.Title> Policies </Card.Title>
                     <Card.Text> </Card.Text>

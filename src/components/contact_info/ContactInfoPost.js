@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-export default class ContactInfoGet extends React.Component {
+export default class ContactInfoPost extends React.Component {
   state = {
     email: "",
     phone: "",
@@ -28,9 +28,13 @@ export default class ContactInfoGet extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
+        Contact Information:
         <label>
-          Contact Information:
+          Email
           <input type="text" email="email" onChange={this.handleChange} />
+        </label>
+        <label>
+          Phone
           <input type="text" phone="phone" onChange={this.handleChange} />
         </label>
         <button type="submit">Add</button>

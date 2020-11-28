@@ -11,7 +11,8 @@ import {
   Form,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ContactInfoGet from "./components/contact_info/ContactInfoGet";
+import ContactInfoPost from "./components/contact_info/ContactInfoPost";
+
 export class InfoEdit extends Component {
   // constructor(props) {
   //   super(props);
@@ -62,7 +63,7 @@ export class InfoEdit extends Component {
                       <input type="submit" value="Submit" />
                     </form> */}
 
-                    <ContactInfoGet />
+                    <ContactInfoPost />
                   </Card.Body>
                 </Card>
               </Col>

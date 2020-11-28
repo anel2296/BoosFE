@@ -27,7 +27,7 @@ export class Home extends Component {
     return (
       <div className="Home">
         <header className="Home-header">
-          <Container fluid>
+          <Container>
             <Row>
               <Col>
                 <img
@@ -62,7 +62,7 @@ export class Home extends Component {
                       <Nav className="justify-content-center">
                         <NavLink
                           style={{ color: "#FFF", width: "200px" }}
-                          to="/menu"
+                          to="/app"
                         >
                           {" "}
                           Menu{" "}
@@ -94,7 +94,7 @@ export class Home extends Component {
                         src="facebook.png"
                         width="150"
                         height="100"
-                        fluid
+                        thumbnail
                       />
                     </a>
                   </Card.Body>

@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import "./SchedEdit.css";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Alert,
-  Breadcrumb,
-  Card,
-  Form,
-} from "react-bootstrap";
+import { Container, Row, Col, Card, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Image from "react-bootstrap/Image";
-import BootstrapSwitchButton from "bootstrap-switch-button-react";
+import "../node_modules/bootstrap-toggle/css/bootstrap-toggle.min.css";
+import AvailabilityPost from "./components/enable disable/AvailabilityPost";
+//import "../node_modules/bootstrap-toggle/js/bootstrap-toggle.min.js";
+
+// import ScheduleInfo from "./components/schedule_info/ScheduleInfo";
+// import BootstrapSwitchButton from "bootstrap-switch-button-react";
 
 export class SchedEdit extends Component {
   constructor(props) {
@@ -54,14 +49,22 @@ export class SchedEdit extends Component {
                 <Card style={{ color: "#000" }}>
                   <Card.Body>
                     <Card.Text> Enable - Disable Service</Card.Text>
-                    <BootstrapSwitchButton
-                      checked={false}
+                    {/* <BootstrapSwitchButton
                       onlabel="Enabled"
                       offlabel="Disabled"
                       onstyle="warning"
                       offstyle="outline-warning"
                       width={150}
-                    />
+                    /> */}
+                    {/* <div class="checkbox">
+                      <label>
+                        <input type="checkbox" data-toggle="toggle" />
+                        Option one is enabled
+                      </label>
+                    </div> */}
+
+                    {/* verify 
+                    <AvailabilityPost/> */}
                   </Card.Body>
                 </Card>
                 <Card border="#000" style={{ color: "#000" }}>
@@ -86,9 +89,9 @@ export class SchedEdit extends Component {
                       </label>
                       <input type="submit" value="Save" />
                     </form>
-                    {/* <Button variant="success" class="with-margin">
-                      Add
-                    </Button> */}
+
+                    {/* Verify
+                    <ScheduleInfo/> */}
                   </Card.Body>
                 </Card>
               </Col>

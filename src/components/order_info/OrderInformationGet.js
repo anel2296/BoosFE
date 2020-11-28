@@ -1,23 +1,23 @@
 import React from "react";
 import axios from "axios";
 
-export default class ContactInfo extends React.Component {
+export default class OrderInformationGet extends React.Component {
   state = {
-    contactInfo: [],
+    orders: [],
   };
 
   componentDidMount() {
     axios.get("url").then((res) => {
       console.log(res);
-      this.setState({ contactInfo: res.data });
+      this.setState({ orders: res.data });
     });
   }
 
   render() {
     return (
       <ul>
-        {this.state.contactInfo.map((contactInfo) => (
-          <li key={contactInfo.id}>{contactInfo.email}</li>
+        {this.state.orders.map((orders) => (
+          <li key={orders.id}>{orders.name}</li>
         ))}
       </ul>
     );
